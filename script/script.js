@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const name = input.value.trim();
 
     //limit list to 10
-    if (List.children.length > 10) {
+    if (List.children.length >= 10) {
       alert("Guest list is full!");
       return;
     }
@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const li = document.createElement("li");
     li.textContent = name;
+    //remove button
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.style.marginLeft = "12px";
+    removeButton.addEventListener("click", () => {
+      li.remove();
+    });
+    //attach button to the names
+    li.appendChild(removeButton);
+
     // add li to the ul
     List.appendChild(li);
     //clear input box
