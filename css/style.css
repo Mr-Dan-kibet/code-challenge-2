@@ -1,0 +1,33 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: greenyellow;
+    padding: 45px;
+}
+h1{
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+button {
+    padding: 3px 6px;
+    font-size: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    
+  }
+  button:hover {
+    background-color: lawngreen;
+  }
+  ul#guestList {
+    list-style: none;
+    padding-left: 0;
+  }
